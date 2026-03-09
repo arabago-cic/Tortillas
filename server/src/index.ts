@@ -40,7 +40,7 @@ cron.schedule("0 8 * * 1-5", () => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Tortilla Calendar server running on port ${PORT}`);
   console.log("Cron programado: emails a las 8:00 AM de lunes a viernes");
 });
